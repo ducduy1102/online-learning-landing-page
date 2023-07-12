@@ -31,7 +31,6 @@ a {
   display: inline-block;
   text-align: center;
   min-width: 108px;
-  padding: 12px 24px;
   font-size: 1.6rem;
   font-weight: 600;
   color: #fff;
@@ -94,7 +93,140 @@ a {
 }
 
 .action .sign-up-btn {
+  padding: 12px 24px;
+  line-height: 1.5;
   color: #1ebfc1;
   border-radius: 6px;
   border: 1px solid #1ebfc1;
+}
+
+/* --------------------------Hero-------------------------- */
+.hero {
+  /* -8px do ở button signup đã padding bottom 8px */
+  padding-top: 42px;
+  background: #ffffff;
+}
+
+.hero .body {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* -------------------Hero left-------------------- */
+.hero .hero-left {
+  /* 458/1170 */
+  width: 39%;
+  padding-top: 93px;
+}
+
+.hero .note {
+  font-size: 1.4rem;
+  color: #767e7e;
+}
+
+.hero .title {
+  margin-top: 18px;
+  font-weight: 700;
+  font-size: 6.2rem;
+  line-height: 1.16;
+  color: #0d1111;
+}
+
+.hero .desc {
+  width: 374px;
+  margin-top: 46px;
+  font-size: 1.8rem;
+  line-height: 1.79;
+  color: #9da6a5;
+}
+
+.hero .cta-group {
+  margin-top: 72px;
+  display: flex;
+  align-items: center;
+  /* margin: 38px 0 48px; */
+}
+
+.hero-cta {
+  min-width: 186px;
+  padding: 20px 40px;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  border-radius: 14px;
+  box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
+  background-color: var(--primary-color);
+}
+
+.hero .play {
+  padding: 0;
+  margin-left: 50px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.hero .play .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0px 22px 50px 0px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+
+/* -------------------Hero right-------------------- */
+.hero .hero-right {
+  position: relative;
+  width: 641px;
+  /* width: 61%; */
+  padding-left: 71px;
+}
+
+.hero .hero-right .hero-img {
+  width: 576px;
+  height: 631px;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-courses {
+  display: flex;
+  position: absolute;
+  width: 157px;
+  height: 75px;
+  top: 149px;
+  left: 25px;
+  padding: 17px 25px 18px;
+  border-radius: 18px;
+  background: #fefefd;
+  box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero-courses .courses-icon {
+  position: relative;
+  margin-right: 16px;
+  width: 36px;
+  height: 40px;
+}
+
+.hero-courses .courses-icon::after {
+  position: absolute;
+  content: '';
+  display: block;
+  top: 28px;
+  width: 28px;
+  right: 4px;
+  height: 4px;
+  border-radius: 3px;
+  background: #ffffff;
+}
+
+.hero-courses .quantity {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #0d1111;
 }
