@@ -41,6 +41,41 @@ a {
   cursor: pointer;
 }
 
+.heading {
+  font-weight: 700;
+  color: #0d1111;
+}
+
+.heading.lv1 {
+  font-size: 6.2rem;
+  line-height: 1.16;
+}
+
+.heading.lv2 {
+  font-size: 4.2rem;
+  line-height: 1.33;
+}
+
+/* Xử lý tràn dòng */
+.line-clamp {
+  display: -webkit-box;
+  /* Gán giá trị mặc định 1 dòng nếu xuống hàng là tạo ... */
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp.line-2 {
+  --line-clamp: 2;
+}
+
+.line-clamp.line-3 {
+  --line-clamp: 3;
+}
+
+.break-all {
+  word-break: break-all;
+}
 /* --------------------------Header-------------------------- */
 .header {
   background-color: #ffffff;
@@ -126,12 +161,8 @@ a {
   color: #767e7e;
 }
 
-.hero .hero-left .title {
+.hero .hero-left .heading {
   margin-top: 18px;
-  font-weight: 700;
-  font-size: 6.2rem;
-  line-height: 1.16;
-  color: #0d1111;
 }
 
 .hero .desc {
@@ -347,4 +378,68 @@ a {
   font-weight: 500;
   font-size: 1rem;
   background: #1ebfc1;
+}
+
+/* --------------------------Features-------------------------- */
+.features {
+  margin-top: 88px;
+  padding: 42px 0;
+}
+
+.features .main-content {
+  max-width: 1024px;
+  width: 100%;
+  margin-left: calc((100vw - 1186px) / 2);
+}
+
+.features .features-title {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-weight: 700;
+  color: #767e7e;
+}
+
+.features .heading {
+  margin-top: 18px;
+  width: 577px;
+}
+
+.features .feature-desc {
+  width: 590px;
+  margin-top: 18px;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  color: #767e7e;
+}
+
+.feature-list {
+  margin-top: 80px;
+  display: flex;
+  gap: 190px;
+  justify-content: space-between;
+}
+
+.feature-item .icon {
+  width: 102px;
+  height: 106px;
+}
+
+.feature-item .feature-name {
+  margin-top: 26px;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #0d1111;
+}
+
+.feature-item .desc {
+  margin-top: 16px;
+  color: #9da6a5;
+  font-size: 1.6rem;
+  line-height: 1.69;
+}
+
+/* --------------------------Courses-------------------------- */
+.courses {
+  margin-top: 88px;
+  padding: 42px 0;
 }
