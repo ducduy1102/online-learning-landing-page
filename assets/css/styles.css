@@ -495,10 +495,10 @@ a {
   overflow: hidden;
 }
 
-/* .courses .course-item .thumb:hover {
+.courses .course-item .thumb:hover {
   opacity: 1;
   transform: scale(1.1);
-} */
+}
 
 .courses .course-item .info {
   position: absolute;
