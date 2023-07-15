@@ -74,6 +74,10 @@ a {
   --line-clamp: 3;
 }
 
+.line-clamp.line-4 {
+  --line-clamp: 4;
+}
+
 .break-all {
   word-break: break-all;
 }
@@ -571,7 +575,7 @@ a {
 
 /* -------------------Statistical-------------------- */
 .stats {
-  padding: 80px;
+  padding: 80px 0;
   margin-top: 265px;
 }
 
@@ -602,4 +606,120 @@ a {
   margin-top: 18px;
   font-size: 1.8rem;
   color: #767e7e;
+}
+
+/* -------------------Feedback-------------------- */
+.feedback {
+  padding: 80px 0;
+  margin-top: 104px;
+}
+
+.feedback .body {
+  display: flex;
+  height: 481px;
+  gap: 72px;
+}
+
+.feedback .content-block {
+  padding: 37px 0;
+}
+
+.content-block .fig {
+  width: 36px;
+  height: 29px;
+}
+
+.content-block .desc {
+  width: 419px;
+  margin-top: 27px;
+  font-size: 3.2rem;
+  line-height: 1.5;
+  color: #5d6564;
+}
+
+.content-block .author {
+  margin-top: 33px;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #767e7e;
+}
+
+.content-block .author strong {
+  font-weight: 500;
+  color: #070707;
+}
+
+.content-block .controls {
+  margin-top: 52px;
+  width: 130px;
+  height: 50px;
+  display: flex;
+  gap: 30px;
+}
+
+.content-block .controls .control-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #fff;
+  border: 1px solid #2ac9bf;
+  background: #2ac9bf;
+}
+
+.content-block .controls .control-btn:hover {
+  background: #fff;
+  color: #2ac9bf;
+}
+
+.feedback .avatar-group {
+  width: 679px;
+  position: relative;
+}
+
+.avatar-group .avatar-item {
+  content: '';
+  position: absolute;
+  width: 78px;
+  height: 78px;
+}
+
+.avatar-group .avatar-item:nth-child(1) {
+  top: 258px;
+  left: 0;
+}
+
+.avatar-group .avatar-item:nth-child(2) {
+  width: 92px;
+  height: 92px;
+  left: 144px;
+  /* c2 căn theo trục X, Y (X lấy 1 */
+  /* transform: translate(31.22%, 0%); */
+}
+
+.avatar-group .avatar-item:nth-child(3) {
+  /* c1 */
+  left: 212px;
+  bottom: 0;
+}
+
+.avatar-group .avatar-item:nth-child(4) {
+  width: 235px;
+  height: 235px;
+  top: 107px;
+  right: 171px;
+}
+
+.avatar-group .avatar-item:nth-child(5) {
+  width: 110px;
+  height: 110px;
+  top: 19px;
+  right: 0;
+}
+
+.avatar-group .avatar-item:nth-child(6) {
+  right: 32px;
+  bottom: 29px;
 }
