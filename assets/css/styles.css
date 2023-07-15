@@ -117,6 +117,8 @@ a {
   /* Cach 2 */
   text-shadow: 1px 0 0 currentColor;
   color: #2f3a3b;
+  text-decoration: underline;
+  text-underline-offset: 6px;
 }
 
 .header .action {
@@ -450,7 +452,7 @@ a {
 }
 
 .course-top .title {
-  font-size: 2.2rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: #767e7e;
 }
@@ -722,4 +724,135 @@ a {
 .avatar-group .avatar-item:nth-child(6) {
   right: 32px;
   bottom: 29px;
+}
+
+/* -------------------CTA-------------------- */
+.cta {
+  margin-top: 50px;
+  background: #def6f5;
+}
+
+.cta .body {
+  display: flex;
+  align-items: center;
+  gap: 410px;
+  /* justify-content: space-between; */
+  padding: 76px 0 88px;
+}
+
+.cta-left {
+  /* margin-left: 135px; */
+  font-size: 1.8rem;
+  color: #767e7e;
+}
+
+.cta-left .heading {
+  margin-top: 0;
+  line-height: 1.5;
+}
+
+.cta-left .desc {
+  margin-top: 18px;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  color: #767e7e;
+}
+
+.cta-right .cta-btn {
+  width: 186px;
+  padding: 20px 40px;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  border-radius: 14px;
+  background: #2ac9bf;
+}
+
+/* -------------------Footer-------------------- */
+.footer {
+  padding: 130px 135px 50px;
+}
+
+.footer .main-content {
+  max-width: 100%;
+}
+
+.footer .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .row .title {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #2e2e2e;
+}
+
+.footer .row .column {
+  /* (100 - 25.7)/4 */
+  width: 18.575%;
+}
+
+.footer .row .column:nth-child(1) {
+  /* (127+144)/1170 */
+  width: 23.2%;
+}
+
+.footer .row .column:nth-child(2) {
+  /* (91+144)/1170 */
+  width: 20.1%;
+}
+
+.footer .row .column:nth-child(3) {
+  /* (113+144)/1170 */
+  width: 21.9%;
+}
+
+.footer .row .column:nth-child(4) {
+  /* (157+144)/1170 */
+  width: 25.7%;
+}
+
+.footer .list {
+  margin-top: 25px;
+}
+
+.footer .social-list {
+  margin-top: 18px;
+}
+
+.footer .list a {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 12px;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #535353;
+}
+
+.footer .list a:hover,
+.footer .social-list a:hover {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+.footer .social-list .social-item:last-child a,
+.footer .list li:last-child a {
+  margin-bottom: 0;
+}
+
+.footer .social-list .social-item {
+  display: flex;
+  gap: 9px;
+}
+
+.footer .copyright {
+  padding-top: 80px;
+}
+
+.footer .copyright p {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  text-align: center;
+  color: #b0b5b4;
 }
