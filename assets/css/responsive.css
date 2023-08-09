@@ -11,14 +11,8 @@
 
 /* ---------------Tablet and mobile--------------- */
 @media screen and (max-width: 991.98px) {
-  .show-on-mobile {
-    display: none;
-  }
-
   .logo {
     position: absolute;
-    /* Căn giữa logo */
-    /* top: 50%; */
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -80,12 +74,12 @@
     border-top: 1.5px solid #ebebeb;
   }
 
+  /* Hero */
   .hero {
     padding-top: 20px;
   }
 
   .hero .body {
-    /* width: 100%; */
     flex-direction: column;
     row-gap: 0;
   }
@@ -119,10 +113,12 @@
     left: 77%;
   }
 
+  /* Feature */
   .features {
     margin-top: 60px;
   }
 
+  /* Course */
   .courses .course-list {
     grid-template-columns: 1fr 1fr;
     row-gap: 160px;
@@ -132,6 +128,7 @@
     width: 100%;
   }
 
+  /* Statistical */
   .stats {
     margin-top: 140px;
   }
@@ -141,8 +138,10 @@
     justify-content: space-evenly;
   }
 
+  /* Feedback */
   .feedback {
     margin-top: 60px;
+    padding-bottom: 60px;
   }
 
   .feedback .avatar-group {
@@ -173,10 +172,12 @@
     right: 10%;
   }
 
+  /* CTA */
   .cta .body {
     gap: 100px;
   }
 
+  /* Footer */
   .footer {
     padding: 100px 30px 30px;
   }
@@ -211,5 +212,204 @@
 @media screen and (max-width: 767.98px) {
   .hide-on-mobile {
     display: none;
+  }
+
+  .menu-drawer {
+    inset: 0 25% 0 0;
+    padding: 40px;
+  }
+
+  /* Header */
+  .header .body {
+    padding: 60px 0 14px 0;
+  }
+
+  .header .sign-up-btn,
+  .header .sign-in-btn {
+    display: none;
+  }
+
+  /* Hero */
+  .heading.lv1 {
+    font-size: 4.5rem;
+    width: 100%;
+  }
+
+  .hero .desc {
+    width: 100%;
+  }
+
+  .hero .hero-right .hero-img {
+    width: 100%;
+  }
+
+  .hero-courses {
+    top: 10%;
+    left: 62%;
+  }
+
+  .hero-schedules {
+    top: 38%;
+    left: 72%;
+  }
+
+  .hero-students {
+    width: 170px;
+    padding: 17px;
+    left: 50%;
+  }
+
+  /* Features */
+  .features {
+    margin-top: 20px;
+    padding-top: 10px;
+  }
+
+  .features .heading {
+    width: 100%;
+    font-size: 4rem;
+  }
+
+  .features .feature-desc {
+    width: 100%;
+  }
+
+  .feature-list {
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 50px;
+  }
+
+  .feature-item {
+    width: 100%;
+  }
+
+  /* Courses */
+  .courses {
+    margin-top: 60px;
+  }
+
+  .heading.lv2 {
+    width: 100%;
+    font-size: 4rem;
+  }
+
+  .course-top {
+    margin-bottom: 60px;
+  }
+
+  .course-top .info {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  .course-top .desc {
+    width: 100%;
+  }
+
+  .courses .course-list {
+    margin-top: 10px;
+    grid-template-columns: 1fr;
+  }
+
+  .course-top .course-link {
+    display: none;
+  }
+
+  .view-all {
+    margin-top: 160px;
+  }
+
+  .view-all a {
+    display: block;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-decoration-line: underline;
+    color: var(--primary-color);
+  }
+
+  /* Statistical */
+  .stats {
+    margin-top: 30px;
+    padding-top: 60px;
+  }
+
+  .stats .stats-list {
+    flex-direction: column;
+    row-gap: 60px;
+  }
+
+  .stats-item .desc {
+    margin-top: 10px;
+  }
+
+  /* Feedback */
+  .feedback .body {
+    flex-direction: column-reverse;
+  }
+
+  .feedback {
+    margin-top: 30px;
+  }
+
+  .feedback .content-block {
+    width: 100%;
+  }
+
+  .content-block .desc {
+    width: 100%;
+  }
+
+  .avatar-group .avatar-item:nth-child(4) {
+    left: 36%;
+  }
+
+  .avatar-group .avatar-item:nth-child(4) img {
+    width: 50%;
+    height: 50%;
+  }
+
+  /* CTA */
+  .cta .body {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  .cta-left {
+    font-size: 1.5rem;
+  }
+
+  /* Footer */
+  .footer .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .footer .row .column {
+    width: 100%;
+  }
+
+  .footer .logo {
+    left: 18%;
+  }
+
+  .footer .row .column:nth-child(1) {
+    grid-column: 1/3;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .footer .row .column:nth-child(3),
+  .footer .row .column:nth-child(4) {
+    width: 100%;
+  }
+
+  .footer .copyright p {
+    font-size: 1.2rem;
   }
 }

@@ -20,7 +20,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="./assets/favicon/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="./assets/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
@@ -71,6 +71,7 @@
               <li class="show-on-mobile"><a href="#!">Sign up</a></li>
             </ul>
           </nav>
+
           <!-- Login/Logout -->
           <div class="action">
             <a href="#!" class="btn sign-in-btn">Sign in</a href="#!">
@@ -80,6 +81,7 @@
       </div>
     </header>
 
+    <!-- Tablet/Mobile header -->
     <header class="mobile-header">
       <input type="checkbox" class="menu-checkbox" name="" id="menu-checkbox" hidden />
 
@@ -92,7 +94,8 @@
         <a href="#">
           <img src="./assets/img/logo.svg" alt="Besnik." class="logo" />
         </a>
-                  <!-- Navigation -->
+
+        <!-- Navigation -->
         <ul id="mobile-nav"></ul>
         <script>
           const pcNav = document.querySelector('#pc-nav');
@@ -251,6 +254,10 @@
               </div>
             </div>
           </div>
+
+          <div class="view-all show-on-mobile">
+            <a href="#!">View All Properties</a>
+          </div>
         </div>
       </div>
 
@@ -300,22 +307,22 @@
             </div>
 
             <div class="avatar-group">
-              <div class="avatar-item">
+              <div class="avatar-item hide-on-mobile">
                 <img src="./assets/img/avatar-1.png" alt="Avatar 1">
               </div>
-              <div class="avatar-item">
+              <div class="avatar-item hide-on-mobile">
                 <img src="./assets/img/avatar-2.png" alt="Avatar 2">
               </div>
-              <div class="avatar-item">
+              <div class="avatar-item hide-on-mobile">
                 <img src="./assets/img/avatar-3.png" alt="Avatar 3">
               </div>
               <div class="avatar-item">
                 <img src="./assets/img/avatar-4.png" alt="Avatar 4">
               </div>
-              <div class="avatar-item">
+              <div class="avatar-item hide-on-mobile">
                 <img src="./assets/img/avatar-5.png" alt="Avatar 5">
               </div>
-              <div class="avatar-item">
+              <div class="avatar-item hide-on-mobile">
                 <img src="./assets/img/avatar-6.png" alt="Avatar 6">
               </div>
             </div>
