@@ -90,7 +90,7 @@ a {
 
 .header.fixed {
   position: sticky;
-  z-index: 999;
+  z-index: 1;
   top: -44px;
 }
 
@@ -391,12 +391,6 @@ a {
   padding: 42px 0;
 }
 
-.features .main-content {
-  max-width: 1024px;
-  width: 100%;
-  margin-left: calc((100vw - 1186px) / 2);
-}
-
 .features .features-title {
   font-size: 1.2rem;
   line-height: 1.5;
@@ -480,11 +474,19 @@ a {
   color: var(--primary-color);
 }
 
-.courses .course-list {
+/* Cách 1 */
+/* .courses .course-list {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 47px;
+} */
+
+/* Cách 2: Dễ responsive */
+.courses .course-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 47px;
 }
 
 .courses .course-item {

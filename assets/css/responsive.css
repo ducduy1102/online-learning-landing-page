@@ -1,0 +1,215 @@
+@media screen and (min-width: 992px) {
+  .mobile-header,
+  .toggle-menu {
+    display: none;
+  }
+
+  .show-on-mobile {
+    display: none;
+  }
+}
+
+/* ---------------Tablet and mobile--------------- */
+@media screen and (max-width: 991.98px) {
+  .show-on-mobile {
+    display: none;
+  }
+
+  .logo {
+    position: absolute;
+    /* Căn giữa logo */
+    /* top: 50%; */
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .nav {
+    position: relative;
+  }
+
+  .nav ul {
+    display: none;
+  }
+
+  .toggle-menu svg {
+    width: 24px;
+    color: #666;
+  }
+
+  .menu-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s ease;
+  }
+
+  .menu-drawer {
+    position: fixed;
+    inset: 0 40% 0 0;
+    background: #fff;
+    z-index: 2;
+    padding: 60px;
+    transform: translateX(-100%);
+    transition: 0.5s ease;
+  }
+
+  .menu-drawer ul {
+    margin-top: 32px;
+  }
+
+  .menu-drawer ul a {
+    display: block;
+    padding: 14px 0;
+    color: #333;
+    font-weight: 500;
+  }
+
+  .menu-checkbox:checked ~ .menu-overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .menu-checkbox:checked ~ .menu-drawer {
+    transform: translateX(0);
+  }
+
+  .separate {
+    border-top: 1.5px solid #ebebeb;
+  }
+
+  .hero {
+    padding-top: 20px;
+  }
+
+  .hero .body {
+    /* width: 100%; */
+    flex-direction: column;
+    row-gap: 0;
+  }
+
+  .hero .hero-left {
+    width: 100%;
+    padding-top: 60px;
+  }
+
+  .heading.lv1 {
+    width: 90%;
+  }
+
+  .hero .desc {
+    width: 80%;
+  }
+
+  .hero-courses {
+    top: 10%;
+    left: 78%;
+  }
+
+  .hero-schedules {
+    top: 38%;
+    left: 80%;
+  }
+
+  .hero-students {
+    width: 170px;
+    padding: 17px;
+    left: 77%;
+  }
+
+  .features {
+    margin-top: 60px;
+  }
+
+  .courses .course-list {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 160px;
+  }
+
+  .courses .course-item {
+    width: 100%;
+  }
+
+  .stats {
+    margin-top: 140px;
+  }
+
+  .stats .stats-list {
+    gap: 70px;
+    justify-content: space-evenly;
+  }
+
+  .feedback {
+    margin-top: 60px;
+  }
+
+  .feedback .avatar-group {
+    width: 100%;
+  }
+
+  .avatar-group .avatar-item:nth-child(1) {
+    top: 0;
+  }
+
+  .avatar-group .avatar-item:nth-child(2) {
+    left: -10%;
+    bottom: 0;
+  }
+
+  .avatar-group .avatar-item:nth-child(3) {
+    top: 45%;
+    right: 0;
+  }
+
+  .avatar-group .avatar-item:nth-child(4) {
+    top: 25%;
+    left: -20%;
+  }
+
+  .avatar-group .avatar-item:nth-child(6) {
+    bottom: 4%;
+    right: 10%;
+  }
+
+  .cta .body {
+    gap: 100px;
+  }
+
+  .footer {
+    padding: 100px 30px 30px;
+  }
+
+  .footer .row .column:nth-child(1) {
+    position: relative;
+  }
+
+  .footer .logo {
+    position: absolute;
+    top: 10%;
+    left: 40%;
+  }
+
+  .footer .list {
+    margin-top: 16px;
+  }
+
+  .footer .copyright {
+    padding-top: 60px;
+  }
+}
+
+/* ---------------Tablet--------------- */
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+  .show-on-mobile {
+    display: none;
+  }
+}
+
+/* ---------------Mobile--------------- */
+@media screen and (max-width: 767.98px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}
